@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-    > A plugin to force you to write continuouly for a few minutes, lest you lose it all.
+    > A plugin to force you to write continuously for a few minutes, lest you lose it all.
 </p>
 
 <div align="center">
