@@ -7,15 +7,7 @@
 </p>
 
 <div align="center">
-    > Drag your video (<10MB) here to host it for free on GitHub.
-</div>
-
-<div align="center">
-
-> Videos don't work on GitHub mobile, so a GIF alternative can help users.
-
-_[GIF version of the showcase video for mobile users](SHOWCASE_GIF_LINK)_
-
+ <img width="600" alt="A GIF demo" src="./.vhs/demo.gif">
 </div>
 
 ## Features
