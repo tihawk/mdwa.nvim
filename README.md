@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-    > A plugin to force you to write continusouly for a few minutes, lest you lose it all.
+    > A plugin to force you to write continuouly for a few minutes, lest you lose it all.
 </p>
 
 <div align="center">
@@ -14,7 +14,7 @@
 
 Get over a writing block by forcing yourself to write non-stop for a set amount of time.
 
-Just open your Neovim, and run the command `:Mdwa` to start a default 3-minute writing session, whereas if you stop writing for 5 seconds, you will lose what you've written so far!
+Just open your Neovim, and run the command `:Mdwa` to start a default 3-minute writing session, wherein if you stop writing for 5 seconds, you will lose what you've written so far!
 
 Start a writing session with a custom duration, by providing the duration in minutes as an argument to the command, e.g. `:Mdwa 5` for a 5-minute session.
 
