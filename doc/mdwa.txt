@@ -1,0 +1,39 @@
+==============================================================================
+------------------------------------------------------------------------------
+                                                                  *Mdwa.options*
+                                 `Mdwa.options`
+Mdwa configuration with its default values.
+
+Type ~
+`(table)`
+Default values:
+>lua
+  Mdwa.options = {
+    debug = false,
+    default_duration = 180, -- 3 minutes
+    max_inactivity = 5,
+    use_tabs = true,
+  }
+
+<
+------------------------------------------------------------------------------
+                                                                  *Mdwa.setup()*
+                            `Mdwa.setup`({options})
+Define your mdwa setup.
+
+Parameters ~
+{options} `(table)` Module config table. See |Mdwa.options|.
+
+Usage ~
+`require("mdwa").setup()` (add `{}` with your |Mdwa.options| table)
+
+
+==============================================================================
+------------------------------------------------------------------------------
+                                                                    *mdwa_timer*
+                                  `mdwa_timer`
+Type ~
+{ stop: `(function,)` start: function } | nil
+
+
+ vim:tw=78:ts=8:noet:ft=help:norl:
