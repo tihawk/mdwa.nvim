@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-    > A catch phrase that describes your plugin.
+    > A plugin to force you to write continusouly for a few minutes, lest you lose it all.
 </p>
 
 <div align="center">
@@ -47,9 +47,9 @@ _[GIF version of the showcase video for mobile users](SHOWCASE_GIF_LINK)_
 
 ```lua
 -- stable version
-use {"mdwa.nvim", tag = "*" }
+use {"tihawk/mdwa.nvim", tag = "*" }
 -- dev version
-use {"mdwa.nvim"}
+use {"tihawk/mdwa.nvim"}
 ```
 
 </td>
@@ -64,9 +64,9 @@ use {"mdwa.nvim"}
 
 ```lua
 -- stable version
-Plug "mdwa.nvim", { "tag": "*" }
+Plug "tihawk/mdwa.nvim", { "tag": "*" }
 -- dev version
-Plug "mdwa.nvim"
+Plug "tihawk/mdwa.nvim"
 ```
 
 </td>
@@ -81,9 +81,9 @@ Plug "mdwa.nvim"
 
 ```lua
 -- stable version
-require("lazy").setup({{"mdwa.nvim", version = "*"}})
+require("lazy").setup({{"tihawk/mdwa.nvim", version = "*"}})
 -- dev version
-require("lazy").setup({"mdwa.nvim"})
+require("lazy").setup({"tihawk/mdwa.nvim"})
 ```
 
 </td>
@@ -107,7 +107,10 @@ require("lazy").setup({"mdwa.nvim"})
 
 ```lua
 require("mdwa").setup({
-    -- you can copy the full list from lua/mdwa/config.lua
+  debug = false,
+  default_duration = 180, -- 3 minutes in seconds.
+  max_inactivity = 5, -- 5 seconds of inactivity equals losing.
+  use_tabs = true, -- If you're like me, and dislike tabs, you can make the MDWA session start in the same tab you're on, by setting this to false.
 })
 ```
 
@@ -115,18 +118,16 @@ require("mdwa").setup({
 
 ## 🧰 Commands
 
-|   Command   |         Description        |
-|-------------|----------------------------|
-|  `:Toggle`  |     Enables the plugin.    |
+|   Command            |         Description        |
+|----------------------|----------------------------|
+|  `:Mdwa [duration]`  |     Starts a new session.  |
 
 ## ⌨ Contributing
 
 PRs and issues are always welcome. Make sure to provide as much context as possible when opening one.
 
-## 🗞 Wiki
-
-You can find guides and showcase of the plugin on [the Wiki](https://github.com/kblagoev/mdwa.nvim/wiki)
-
 ## 🎭 Motivations
 
-> If alternatives of your plugin exist, you can provide some pros/cons of using yours over the others.
+This plugin is based on The Most Dangerous Writing App. The original version of the code for the plugin can be found [here](https://github.com/GitMurf/nvim-code-to-share/tree/main/mdwa).
+
+For building the plugin, I used [a boilerplate by shortcuts](https://github.com/shortcuts/neovim-plugin-boilerplate).
