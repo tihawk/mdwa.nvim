@@ -18,15 +18,19 @@ _[GIF version of the showcase video for mobile users](SHOWCASE_GIF_LINK)_
 
 </div>
 
-## ⚡️ Features
+## Features
 
-> Write short sentences describing your plugin features
+Get over a writing block by forcing yourself to write non-stop for a set amount of time.
 
-- FEATURE 1
-- FEATURE ..
-- FEATURE N
+Just open your Neovim, and run the command `:Mdwa` to start a default 3-minute writing session, whereas if you stop writing for 5 seconds, you will lose what you've written so far!
 
-## 📋 Installation
+Start a writing session with a custom duration, by providing the duration in minutes as an argument to the command, e.g. `:Mdwa 5` for a 5-minute session.
+
+After you finish your session, if you want to keep what you've written, you can just save the buffer content before quitting with `:wq <filename>`.
+
+The writing session buffer is formatted as markdown, btw.
+
+## Installation
 
 <div align="center">
 <table>
@@ -92,16 +96,16 @@ require("lazy").setup({"tihawk/mdwa.nvim"})
 </table>
 </div>
 
-## ☄ Getting started
+## Getting started
 
-> Describe how to use the plugin the simplest way
+- Install using your favourite package manager from the [Installation](#installation) section.
+- Optionally, configure by using the configuration settings from the [Configuration](#configuration) section.
+- After starting Neovim, you should have the `:Mdwa` command available, to start a new writing session with a default duration of 3 minutes.
+- You can provide a custom duration for a new session, e.g. `:Mdwa 2` for a 2-minute session.
+- Start writing!
+- Keep writing! If you stop writing for 5 seconds (also configurable), you will lose everything you've written so far!
 
-## ⚙ Configuration
-
-> The configuration list sometimes become cumbersome, making it folded by default reduce the noise of the README file.
-
-<details>
-<summary>Click to unfold the full list of options with their default values</summary>
+## Configuration
 
 > **Note**: The options are also available in Neovim by calling `:h mdwa.options`
 
@@ -114,19 +118,15 @@ require("mdwa").setup({
 })
 ```
 
-</details>
+## Commands
 
-## 🧰 Commands
+- `:Mdwa [duration]` - Creates a new writing session. Takes an optional argument `duration` for the duration of the session in minutes. It can take floating point numbers as well, like `1.5` for a minute and a half.
 
-|   Command            |         Description        |
-|----------------------|----------------------------|
-|  `:Mdwa [duration]`  |     Starts a new session.  |
-
-## ⌨ Contributing
+## Contributing
 
 PRs and issues are always welcome. Make sure to provide as much context as possible when opening one.
 
-## 🎭 Motivations
+## Motivations
 
 This plugin is based on The Most Dangerous Writing App. The original version of the code for the plugin can be found [here](https://github.com/GitMurf/nvim-code-to-share/tree/main/mdwa).
 
