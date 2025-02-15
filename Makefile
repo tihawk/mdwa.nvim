@@ -42,12 +42,12 @@ lint:
 
 luals-ci:
 	rm -rf .ci/lua-ls/log
-	lua-language-server --configpath .luarc.json --logpath .ci/lua-ls/log --check .
+	.ci/lua-ls/bin/lua-language-server --configpath .luarc.json --logpath .ci/lua-ls/log --check .
 	[ -f .ci/lua-ls/log/check.json ] && { cat .ci/lua-ls/log/check.json 2>/dev/null; exit 1; } || true
 
 luals:
 	mkdir -p .ci/lua-ls
-	curl -sL "https://github.com/LuaLS/lua-language-server/releases/download/3.7.4/lua-language-server-3.7.4-darwin-x64.tar.gz" | tar xzf - -C "${PWD}/.ci/lua-ls"
+	curl -sL "https://github.com/LuaLS/lua-language-server/releases/download/3.7.4/lua-language-server-3.7.4-linux-x64.tar.gz" | tar xzf - -C "${PWD}/.ci/lua-ls"
 	make luals-ci
 
 # setup
