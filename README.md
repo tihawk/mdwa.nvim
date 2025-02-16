@@ -120,6 +120,8 @@ PRs and issues are always welcome. Make sure to provide as much context as possi
 
 ## Motivations
 
-This plugin is based on The Most Dangerous Writing App. The original version of the code for the plugin can be found [here](https://github.com/GitMurf/nvim-code-to-share/tree/main/mdwa).
+This plugin is directly inspired by [The Most Dangerous Writing App](https://github.com/maebert/themostdangerouswritingapp), a web app which is now [owned by Squibler](https://www.squibler.io/dangerous-writing-prompt-app).
+
+I wanted to have this integrated in Neovim, so I decided to write a plugin for it. I used the code provided [here](https://github.com/GitMurf/nvim-code-to-share/tree/main/mdwa) as a starting point, and to learn more about the Neovim API.
 
 For building the plugin, I used [a boilerplate by shortcuts](https://github.com/shortcuts/neovim-plugin-boilerplate).
