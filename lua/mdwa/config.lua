@@ -12,6 +12,14 @@ Mdwa.options = {
   default_duration = 180, -- 3 minutes
   max_inactivity = 5,
   use_tabs = true,
+  colors = {
+    bad = { "#ff0033", "#e5002d", "#cc0028", "#b20023", "#7f0019" },
+    good = "#3b474a",
+  },
+  symbols = {
+    empty_bar = "░",
+    filled_bar = "█",
+  },
 }
 
 ---@private

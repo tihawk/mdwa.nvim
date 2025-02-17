@@ -106,7 +106,20 @@ require("mdwa").setup({
   debug = false,
   default_duration = 180, -- 3 minutes in seconds.
   max_inactivity = 5, -- 5 seconds of inactivity equals losing.
-  use_tabs = true, -- If you're like me, and dislike tabs, you can make the MDWA session start in the same tab you're on, by setting this to false.
+  -- If you're like me, and dislike tabs, you can make the MDWA session start in the same tab you're on, by setting this to false.
+  use_tabs = true,
+  colors = {
+    -- Colours appearing during inactivity, progressing from right to left
+    bad = { "#ff0033", "#e5002d", "#cc0028", "#b20023", "#7f0019", },
+    -- Colour for successfully completing the writing session
+    good = "#3b474a",
+  },
+  symbols = {
+    -- Symbol for the empty portion of the progress bar
+    empty_bar = "░",
+    -- Symbol for the filled portion of the progress bar
+    filled_bar = "█",
+  },
 })
 ```
 
